@@ -1,0 +1,27 @@
+# Secrets — never commit
+.env
+.env.*
+*.pem
+*.key
+
+# Android signing. Losing the keystore locks us out of Play Store updates
+# forever; committing it lets anyone publish updates as us.
+*.jks
+*.keystore
+key.properties
+
+# Dependencies / build output
+node_modules/
+dist/
+build/
+.next/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Scratch
+.tmp/
